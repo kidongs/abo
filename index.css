@@ -1,0 +1,102 @@
+body {
+  background-color: #2c3e50;
+  text-align: center;
+  color: white;
+}
+
+.contents {
+  transform: translateY(30%);
+}
+
+.js_clock .clock {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.js_clock .calendar {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.form {
+  display: none;
+}
+.form input::placeholder {
+  color: white;
+}
+
+.greeting {
+  display: none;
+  font-size: 2rem;
+}
+
+.toDoForm input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+.toDoForm input::placeholder,
+.toDoForm input:focus {
+  color: white;
+}
+
+.toDoList {
+  display: inline-block;
+}
+.toDoList li {
+  padding: 0.4rem;
+}
+.toDoList li .delBtn {
+  color: white;
+  cursor: pointer;
+  border-color: #288CFE;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #288CFE;
+}
+
+.toDoList li .delBtn:hover {
+  background-color: #1E6FCB;
+}
+.toDoList li .delBtn:active {
+  box-shadow: 0 5px #124075;
+  transform: translate(-1px);
+}
+
+
+.weather {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.valid {
+  display: block;
+}
+
+.delBtn,
+.doneBtn {
+  margin-left: 0.5rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  animation: fadeIn 1s linear;
+  background-size:cover;
+}
