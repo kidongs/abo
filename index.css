@@ -21,6 +21,12 @@ body {
 .form {
   display: none;
 }
+.form input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  margin: 1.2rem;
+}
 .form input::placeholder {
   color: white;
 }
